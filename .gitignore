@@ -6,3 +6,4 @@
 *.idx
 *.ind
 /*.pdf
+/output.tex
