@@ -1,0 +1,37 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass{article}
+\usepackage[a5paper, margin = 1.5cm]{geometry}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setCJKmainfont{SimSun}
+\setCJKsansfont{SimHei}
+\xeCJKsetup{PunctStyle = kaiming}
+\usepackage{titlesec}
+\titleformat\section[frame]{\newpage\normalsize}{}{0pt}{\sffamily\mdseries\large\filcenter}[]
+\titlespacing\section{0pt}{6pt}{0pt}
+\titleformat\subsection[block]{\sffamily\mdseries\small\filcenter}{}{0pt}{}[]
+\titlespacing\subsection{0pt}{0.5em plus 1pt minus 1pt}{0pt}
+\usepackage{multicol}
+\setlength\columnsep{0.25cm}
+\setlength\columnseprule{0.4pt}
+\setlength\multicolsep{0pt}
+
+% \hfill \dotfill \hrulefill
+\newcommand\myindexitem[2]{{\raggedright\footnotesize#1\hfill\hspace*{\fill}\mbox{#2}\par}}
+\newcommand\myindexref[2]{#2\textsuperscript{#1}}
+\setlength\parindent{0pt}
+\setlength\parskip{0pt plus 1pt}
+\begin{document}
+	\pagestyle{empty}
+	\flushbottom
+	\input{output}
+	\vfill
+	\rule{1in}{0.4pt}\par
+	{
+		\scriptsize
+		此索引表由Frog Chen制作于2017年10月9日 \textasciitilde\ 2018年7月1日。
+		\par
+	}
+\end{document}
